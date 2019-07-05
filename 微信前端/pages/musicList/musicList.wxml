@@ -1,0 +1,11 @@
+<!--songList.wxml-->
+<view id="{{index}}" wx:for="{{songList}}" bindtap="redirectPlayMusic">
+<view class="song">
+  <view class="song-title">
+    {{item.musicName}}
+  </view>
+  <view class="song-album">
+    {{item.author}}
+  </view>
+</view>
+</view>

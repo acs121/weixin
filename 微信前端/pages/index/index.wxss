@@ -1,0 +1,78 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: flex-start;
+  background: #50C885;
+}
+
+.menu {
+  display: flex;
+  justify-content:flex-start;
+  color: #fff;
+}
+
+.recommendIsChecked {
+  display: flex;
+  width: 180px;
+  justify-content:center;
+  background: #FFF;
+  color:black;
+}
+
+.recommend {
+  display: flex;
+  width: 180px;
+  justify-content:center;
+}
+
+.my {
+  display: flex;
+  width: 180px;
+  justify-content:center;
+}
+
+.myIsChecked {
+  display: flex;
+  width: 180px;
+  justify-content:center;
+  background: #5FD9A5;
+}
+
+.swiper {
+  height: 400rpx;
+  width: 100%;
+  margin-top: 20px;
+}
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.out-box{
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner-box{
+  margin-top: 15px;
+
+}
+.inner-box image{
+  width:300rpx;
+  height:300rpx;
+}
+
+.hotMusic {
+  padding-left: 45px;
+}
+
+.meiMusic {
+  padding-top:10px;
+}
+
+.flyMusic {
+  padding-left: 45px;
+}

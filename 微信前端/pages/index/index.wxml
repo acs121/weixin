@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class=".container">
+  <!-- 导航 -->
+  <view class="menu">
+    <view class="{{IsChecked?'recommendIsChecked':'recommend'}}" bindtap="redirect_change_bgcolor_recommend">
+      <input placeholder="输入你想要的" focus="true" bindinput="musicNameInput"/>
+    </view>
+    <view class="{{IsChecked?'my':'myIsChecked'}}" bindtap="redirect_change_bgcolor_my">
+      <text>搜索</text>
+    </view>
+  </view>
+  <!-- 轮播 -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">   
+    <block wx:for="{{movies}}" wx:for-index="index">    
+      <swiper-item>    
+        <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
+      </swiper-item>    
+    </block>    
+  </swiper>
+  <view class="out-box">
+    <view class="inner-box" bindtap="jumpToSongList">
+      <image src="http://static.kgimg.com/public/root//images/radio_7.jpg" id="1" class="newMusic"></image>
+      <image src="http://static.kgimg.com/public/root//images/radio_4.jpg" id="2" class="hotMusic"></image>
+      <image src="http://static.kgimg.com/public/root//images/radio_5.jpg" id="21" class="meiMusic"></image>
+      <image src="http://static.kgimg.com/public/root//images/radio_9.jpg" id="25" class="flyMusic"></image>
+    </view>
+  </view>
+</view>
